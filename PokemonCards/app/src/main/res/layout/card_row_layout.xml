@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <!--    For full width-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_16sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+
+    </RelativeLayout>
+
+    <com.anand.pokemoncard.presentation.core.views.QueensParkBoldTextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:lineSpacingExtra="@dimen/_7sdp"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <com.anand.pokemoncard.presentation.core.views.QueensParkTextView
+        android:id="@+id/tv_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="@dimen/_7sdp"
+        android:maxLines="3"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/_15sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+            android:id="@+id/tv_level"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_gray_view"
+            android:drawableStart="@drawable/ic_level"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:textColor="@color/saved_blue"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+            android:id="@+id/tv_hp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_gray_view"
+            android:drawableStart="@drawable/ic_hp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:textColor="@color/saved_blue"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@color/list_seperator" />
+
+</LinearLayout>

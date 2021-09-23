@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PokemonCard</string>
+
+    <!--Error strings-->
+    <string name="error_network">Internet connection not found.</string>
+    <string name="error_unparceble_data">Unparceble data found from server</string>
+    <string name="error_unknown_error">Unknown error : </string>
+    <string name="error_something_went_Wrong">Something went wrong</string>
+    <string name="text_no_data">No Data Available</string>
+
+    <!--label strings-->
+    <string name="text_sub_types">Sub Types</string>
+    <string name="text_attacks">Attacks</string>
+    <string name="text_weakness">Weakness</string>
+    <string name="text_abilities">Abilities</string>
+    <string name="text_resistances">Resistances</string>
+    <string name="text_loading">Loading…</string>
+
+    <string name="text_read">Read</string>
+    <string name="text_save">Save</string>
+    <string name="text_sort_by">Sort By</string>
+    <string name="text_relevance">Relevance</string>
+    <string name="text_level">Level - High to Low</string>
+    <string name="text_hp">Hp - High to Low</string>
+    <string name="text_level_low">Level - Low to High</string>
+    <string name="text_hp_low">Hp - Low to High</string>
+    <string name="text_already_saved">The Cards Already Saved</string>
+
+</resources>

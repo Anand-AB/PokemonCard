@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.anand.pokemoncard.presentation.core.views.QueensParkBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_sort_by"
+        android:textColor="@color/saved_blue"
+        android:textSize="@dimen/_18sdp" />
+
+    <RadioGroup
+        android:id="@+id/rg_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_relevance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_relevance" />
+
+        <RadioButton
+            android:id="@+id/rb_saved_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_level" />
+
+        <RadioButton
+            android:id="@+id/rb_saved_first_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_level_low" />
+
+        <RadioButton
+            android:id="@+id/rb_saved_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_hp" />
+
+        <RadioButton
+            android:id="@+id/rb_saved_last_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_hp_low" />
+
+    </RadioGroup>
+</LinearLayout>

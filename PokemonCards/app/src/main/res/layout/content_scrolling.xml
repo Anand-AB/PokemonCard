@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-18dp"
+    android:background="@drawable/bg_top_side_rounded_corner"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".presentation.cardDetail.CardDetailActivity"
+    tools:showIn="@layout/activity_card_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_18sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+                android:id="@+id/tv_level"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_gray_view"
+                android:drawableStart="@drawable/ic_level"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:textColor="@color/saved_blue"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+                android:id="@+id/tv_hp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_gray_view"
+                android:drawableStart="@drawable/ic_hp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:textColor="@color/saved_blue"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sub_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_sub_types"
+                android:textColor="@color/saved_blue"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.anand.pokemoncard.presentation.core.views.QueensParkTextView
+                android:id="@+id/tv_sub_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:lineSpacingExtra="@dimen/_7sdp"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_attacks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_attacks"
+                android:textColor="@color/saved_blue"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.anand.pokemoncard.presentation.core.views.QueensParkTextView
+                android:id="@+id/tv_attacks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:lineSpacingExtra="@dimen/_7sdp"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_weakness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_weakness"
+                android:textColor="@color/saved_blue"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.anand.pokemoncard.presentation.core.views.QueensParkTextView
+                android:id="@+id/tv_weakness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:lineSpacingExtra="@dimen/_7sdp"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_abilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_abilities"
+                android:textColor="@color/saved_blue"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.anand.pokemoncard.presentation.core.views.QueensParkTextView
+                android:id="@+id/tv_abilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:lineSpacingExtra="@dimen/_7sdp"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_resistances"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.anand.pokemoncard.presentation.core.views.ChivoRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_resistances"
+                android:textColor="@color/saved_blue"
+                android:textSize="@dimen/_15sdp" />
+
+            <com.anand.pokemoncard.presentation.core.views.QueensParkTextView
+                android:id="@+id/tv_resistances"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:lineSpacingExtra="@dimen/_7sdp"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
